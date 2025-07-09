@@ -1,7 +1,5 @@
 const grid = document.querySelector(".grid");
-const clearButton = document.querySelector("#clearBtn");
 const randomBtn = document.querySelector("#randomBtn");
-
 
 const gridOptions = [
     { option: 16, width: "32px", height: "32px", count: 256 },
@@ -68,9 +66,6 @@ input.addEventListener("input", (event) => {
 function clearGrid() {
     grid.innerHTML = "";
 }
-
-// clearButton.addEventListener("click", () => clearGrid())
-
 
 document.addEventListener("DOMContentLoaded", () => {
     input.value = 16;
