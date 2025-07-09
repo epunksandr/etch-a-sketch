@@ -12,28 +12,29 @@
 <body>
 
     <div class="container">
+        <div class="control-panel">
+            <h3>CONTROL PANEL</h3>
+            <div class="slider">
+                <label for="size">Choose grid size</label>
+                <input type="range" id="input" min="16" max="64" step="16" value="16" list="markers">
+                <datalist id="markers">
+                    <option value="16" label="16x16"></option>
+                    <option value="32" label="32x32"></option>
+                    <option value="48" label="48x48"></option>
+                    <option value="64" label="64x64"></option>
+                </datalist>
+                <p id="value"></p>
+            </div>
+
+            <!-- <button id="clearBtn">Clear grid</button> -->
+            <div class="buttons">
+                <button id="randomBtn">Random color</button>
+            </div>
+        </div>
+
         <div class="board">
             <div class="grid"></div>
         </div>
-
-        <div class="control-panel">
-            <h3>CONTROL PANEL</h3>
-            <div class="buttons">
-                <div class="options">
-                    <button value="16">16x16 grid</button>
-                    <button value="32">32x32 grid</button>
-                    <button value="64">64x64 grid</button>
-                </div>
-                <button id="clearBtn">Clear grid</button>
-            </div>
-            <div class="buttons">
-                <button>Random color</button>
-                <button>Darkening effect</button>
-            </div>
-
-        </div>
-
-
     </div>
 
 
